@@ -28,14 +28,14 @@ public static void main(String[] args) {
 	 List<WebElement> table = driver.findElements(By.xpath("//table[@class='ui-datepicker-calendar']/tbody/tr/td"));
 	 for (WebElement day : table) {
     	 String dayText = day.getText();
-    	 System.out.println(dayText);
+    	
 	if(dayText.equals(expectedDay)) {
 	               day.click();
+	               break;
 	        }else { 
-	        System.out.println("oh no!");
+	        System.out.println("not the day");
 	        }
-	
-		
+
 		}
 }
 }

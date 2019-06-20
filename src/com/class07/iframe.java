@@ -20,10 +20,10 @@ public class iframe extends CommonMethods {
 		driver.findElement(By.cssSelector("input#name")).sendKeys("alvaro");
 		driver.switchTo().defaultContent();
 		
-		boolean Switch =driver.findElement(By.xpath("//h2[text()='SwitchTo']")).isDisplayed();
-		if(Switch==true) {
-			driver.close();	
-		}
+//		boolean Switch =driver.findElement(By.xpath("//h2[text()='SwitchTo']")).isDisplayed();
+//		if(Switch==true) {
+//			driver.close();	
+//		}
 		
 	
 		

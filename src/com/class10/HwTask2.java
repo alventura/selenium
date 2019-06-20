@@ -36,7 +36,7 @@ public class HwTask2 extends CommonMethods {
 		clicking("css","input#ctl00_MainContent_fmwOrder_cardList_0");
 		sendText1("css","input#ctl00_MainContent_fmwOrder_TextBox6","123456789000");
 		sendText1("css","input#ctl00_MainContent_fmwOrder_TextBox1","12/24");
-		clicking("css","a#ctl00_MainContent_fmwOrder_InsertButton");
+		clicking("css","a#ctl00_MainContent_fmwOrder_cardList_1");
 		
 		//go back and review if order is present
 		clicking("xpath","//a[@href='Default.aspx']");//view orders

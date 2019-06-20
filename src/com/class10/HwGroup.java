@@ -18,7 +18,7 @@ public class HwGroup extends CommonMethods {
 		
 		sendText1("css","input#firstname","Al");
 		sendText1("css","input#lastname","Ventura");
-		checkBox(driver,driver.findElement(By.xpath("//html/body/div[2]/div[1]/div/form/div[3]/label[2]/input")));
+		checkBox(driver,driver.findElement(By.xpath("/html/body/div[2]/div[1]/div/form/div[3]/label[3]/input")));
 		checkBox(driver,driver.findElement(By.xpath("//html/body/div[2]/div[1]/div/form/div[4]/label[3]/input")));
 		
 		WebElement contries = driver.findElement(By.cssSelector("select#sel1"));

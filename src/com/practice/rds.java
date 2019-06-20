@@ -13,6 +13,7 @@ import utils.Mrds;
 public class rds extends Mrds{
 	public static void main(String[] args) throws InterruptedException {
 	
+		
 		System.setProperty("webdriver.chrome.driver", "src\\drivers\\chromedriver.exe");
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
@@ -32,7 +33,6 @@ public class rds extends Mrds{
 		String window =driver.getTitle();
         String currentPage= driver.getWindowHandle();
         
-       
 		
 		driver.navigate().to("http://avionte.hssstaffing.com/Avionte/Portals/Portals/Employee/RequireDocument.aspx ");
 		driver.findElement(By.cssSelector("input[type='text']")).sendKeys(username);
